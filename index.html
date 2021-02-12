@@ -8,89 +8,67 @@
     <title>Servicios de Muelle</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2">
-                <div class="page-header">
-                    <h1 id="clock">
-                    </h1>
-                </div>
+        <div class="content-header">
+            <div class="row header">
+                <div class="col-md-3">
+                    <div class="page-header">
+                        <h1 id="clock">
+                        </h1>
+                    </div>
 
-            </div>
-            <div class="col-md-8">
-                <div class="page-header">
+                </div>
+                <div class="col-md-6">
+                    <div class="page-header">
+                        <h1>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60.58" height="58.059"
+                                    viewBox="0 0 70.58 68.059">
+                                    <g id="Icon_ionic-md-boat" data-name="Icon ionic-md-boat"
+                                        transform="translate(-2.25 -2.813)">
+                                        <path id="Trazado_4" data-name="Trazado 4"
+                                            d="M10.482,61.576h.167c5.376,0,10.079-3,13.439-6.695,3.36,3.7,8.063,6.737,13.439,6.737s10.079-3.046,13.439-6.744c3.36,3.7,8.063,6.7,13.439,6.7h.167l8.075-21.864a3.7,3.7,0,0,0-.169-2.674,3.29,3.29,0,0,0-1.98-1.674L64.479,33.4V17.934a6.846,6.846,0,0,0-6.793-6.772H47.607l-2.52-8.35H29.968l-2.52,8.35H17.369A6.826,6.826,0,0,0,10.6,17.934V33.4l-6,1.974a3.346,3.346,0,0,0-2,1.681,3.6,3.6,0,0,0-.162,2.66Zm6.892-43.639H57.7V31.211L37.539,24.657,17.374,31.211Z"
+                                            transform="translate(0 0)" fill="#fff" />
+                                        <path id="Trazado_5" data-name="Trazado 5"
+                                            d="M48.177,28.689a23.216,23.216,0,0,1-26.878,0S12.218,38.77,4.5,38.77h3.36c4.7,0,9.239-1.847,13.439-4.032a29.2,29.2,0,0,0,26.878,0c4.2,2.185,8.736,4.033,13.439,4.033h3.36C57.469,38.77,48.177,28.689,48.177,28.689Z"
+                                            transform="translate(2.79 32.101)" fill="#fff" />
+                                    </g>
+                                </svg>
+                            </span>
+                            Muelle Exportadora Cetus S.A.C
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-md-3">
                     <h1>
-                        Muelle Exportadora Cetus S.A.C
+                        <p id="totalBarcos"></p>
                     </h1>
                 </div>
-            </div>
-            <div class="col-md-2">
-                <h1>
-                    Cantidad de barcos : 6
-                </h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 table-reponsive">
-                <table id="table" class="table table-dark table-bordered">
-                    <thead>
-                        <tr>
-                            <th data-field="fechahora">Fecha y Hora</th>
-                            <th data-field="arribo">Arribo</th>
-                            <th data-field="embarcacion">Embarcacion</th>
-                            <th data-field="servicios">Servicios</th>
-                            <th data-field="empresa">Empresa</th>
-                        </tr>
-                    </thead>
-                    <!--<tbody>
-                        <tr>
-                            <td>05/02/2021 14:45 PM</td>
-                            <td>Callao</td>
-                            <td>Adolfito II</td>
-                            <td>Descarga</td>
-                            <td>TASA</td>
-                        </tr>
-                        <tr>
-                            <td>05/02/2021 15:06 PM</td>
-                            <td>Paita</td>
-                            <td>Adolfito I</td>
-                            <td>Atraque</td>
-                            <td>Hayduk</td>
-                        </tr>
-                        <tr>
-                            <td>05/02/2021 15:10 PM</td>
-                            <td>Callao</td>
-                            <td>Adolfito I</td>
-                            <td>Camara</td>
-                            <td>Hayduk</td>
-                        </tr>
-                        <tr>
-                            <td>05/02/2021 15:12 PM</td>
-                            <td>Paita</td>
-                            <td>Ofelia IV</td>
-                            <td>Camara</td>
-                            <td>Hayduk</td>
-                        </tr>
-                        <tr>
-                            <td>05/02/2021 15:12 PM</td>
-                            <td>Paita</td>
-                            <td>Ofelia IV</td>
-                            <td>Camara</td>
-                            <td>Hayduk</td>
-                        </tr>
-                        <tr>
-                            <td>05/02/2021 15:12 PM</td>
-                            <td>Paita</td>
-                            <td>Ofelia IV</td>
-                            <td>Camara</td>
-                            <td>Hayduk</td>
-                        </tr>
-                    </tbody>-->
-                </table>
+        <div class="content-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <th data-field="fechahora" class="text-center">Fecha y Hora</th>
+                                <th data-field="embarcacion" class="text-center">Embarcacion</th>
+                                <th data-field="servicios" class="text-center">Servicios</th>
+                                <th data-field="estacion" class="text-center">Estacion</th>
+                                <th data-field="estado" class="text-center">Estado</th>
+                                <th data-field="empresa" class="text-center">Empresa</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">                           
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -101,12 +79,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
 
     <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
     <!--<script src="js/moment.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js"></script>
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
     <script src="js/main.js"></script>
 </body>
 

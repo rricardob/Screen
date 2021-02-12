@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        @font-face {
+            font-family: "Roboto";
+            src: url("fonts/Roboto-Regular.ttf") format("truetype");
+            /*url("../fonts/Roboto-Regular.woff") format("woff");*/
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Roboto-bold";
+            src: url("fonts/Roboto-Bold.ttf") format("truetype");
+            /*url("../fonts/Roboto-Regular.woff") format("woff");*/
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        * {
+            font-family: "Roboto-bold", sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #div1 {
+            height: 200px;
+            width: 100%;
+            background-color: #d9b006;            
+        }
+
+        #div2 {
+            height: 100%;
+            width: 100%;
+            background-color: #283039;
+        }
+        
+        .nodo{
+            display: flex;                     
+            flex-wrap: wrap;  
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!--<div class="row header">
+        <div class="col-md-3" style="background-color: aqua;">hora</div>
+        <div class="col-md-6" style="background-color: indianred;">muelle</div>
+        <div class="col-md-3" style="background-color: bisque;">cantidad</div>
+    </div>-->
+    <div id="div1">
+        <div class="nodo">
+            <div style="background-color: aqua;">hora</div>
+            <div style="background-color: indianred;">muelle</div>
+            <div style="background-color: bisque;">cantidad</div>
+        </div>
+    </div>
+
+    <div id="div2">
+        Contenido del div 2. Este div quiero que ocupe hasta el final de la pantalla de manera vertical.
+        <table id="table" class="table table-dark table-bordered">
+            <thead>
+                <tr>
+                    <th data-field="fechahora">Fecha y Hora</th>
+                    <th data-field="arribo">Arribo</th>
+                    <th data-field="embarcacion">Embarcacion</th>
+                    <th data-field="servicios">Servicios</th>
+                    <th data-field="empresa">Empresa</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <!--<script src="js/moment.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
