@@ -127,7 +127,9 @@ function Init() {
               doc.data().nombreEmbarcacion +
               "</td>" +
               "<td>Atraco</td>" +
-              "<td>2</td>" +
+              "<td>"+
+	      doc.data().estacion+
+	      "</td>" +
               "<td>" +
               doc.data().estado +
               "</td>" +
